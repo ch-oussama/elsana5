@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواضيع الامتحانات - السنة الخامسة ابتدائي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .topic-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .btn-topic {
+            background-color: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-weight: bold;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-topic:hover {
+            background-color: #38bdf8;
+            color: white;
+            border-color: #38bdf8;
+            transform: translateY(-2px);
+        }
+        .btn-topic i {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                الخامسة ابتدائي
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="subjects.html"><i class="fas fa-book"></i> المواد</a></li>
+                <li><a href="videos.html"><i class="fas fa-video"></i> الفيديوهات</a></li>
+                <li><a href="tests.html"><i class="fas fa-tasks"></i> التمارين</a></li>
+                <li><a href="topics.html" class="active"><i class="fas fa-file-alt"></i> مواضيع</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header" style="background: linear-gradient(135deg, #0ea5e9, #0369a1);">
+        <h1><i class="fas fa-file-pdf"></i> مواضيع الامتحانات (DzExams)</h1>
+        <p>مواضيع اختبارات رسمية مبنية على منهاج الجيل الثاني لجميع الفصول</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="term1">الفصل الأول</button>
+        <button class="tab-btn" data-tab="term2">الفصل الثاني</button>
+        <button class="tab-btn" data-tab="term3">الفصل الثالث</button>
+    </div>
+
+    <!-- الفصل الأول -->
+    <div class="content-section active" data-content="term1">
+        <div class="container">
+            <div class="subjects-grid" style="padding: 20px 0;">
+                <div class="subject-card math">
+                    <i class="fas fa-calculator"></i>
+                    <h3>الرياضيات</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=الرياضيات+-+الفصل+الأول+-+نموذج+1+-+الصفحة+" data-title="الرياضيات - الفصل الأول - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=الرياضيات+-+الفصل+الأول+-+نموذج+2+-+الصفحة+" data-title="الرياضيات - الفصل الأول - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=الرياضيات+-+الفصل+الأول+-+نموذج+3+-+الصفحة+" data-title="الرياضيات - الفصل الأول - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card arabic">
+                    <i class="fas fa-language"></i>
+                    <h3>اللغة العربية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+العربية+-+الفصل+الأول+-+نموذج+1+-+الصفحة+" data-title="اللغة العربية - الفصل الأول - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+العربية+-+الفصل+الأول+-+نموذج+2+-+الصفحة+" data-title="اللغة العربية - الفصل الأول - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+العربية+-+الفصل+الأول+-+نموذج+3+-+الصفحة+" data-title="اللغة العربية - الفصل الأول - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card islamic">
+                    <i class="fas fa-mosque"></i>
+                    <h3>التربية الإسلامية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+الإسلامية+-+الفصل+الأول+-+نموذج+1+-+الصفحة+" data-title="التربية الإسلامية - الفصل الأول - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+الإسلامية+-+الفصل+الأول+-+نموذج+2+-+الصفحة+" data-title="التربية الإسلامية - الفصل الأول - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+الإسلامية+-+الفصل+الأول+-+نموذج+3+-+الصفحة+" data-title="التربية الإسلامية - الفصل الأول - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card science">
+                    <i class="fas fa-flask"></i>
+                    <h3>التربية العلمية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+العلمية+-+الفصل+الأول+-+نموذج+1+-+الصفحة+" data-title="التربية العلمية - الفصل الأول - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+العلمية+-+الفصل+الأول+-+نموذج+2+-+الصفحة+" data-title="التربية العلمية - الفصل الأول - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+العلمية+-+الفصل+الأول+-+نموذج+3+-+الصفحة+" data-title="التربية العلمية - الفصل الأول - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card civic">
+                    <i class="fas fa-users"></i>
+                    <h3>التربية المدنية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+المدنية+-+الفصل+الأول+-+نموذج+1+-+الصفحة+" data-title="التربية المدنية - الفصل الأول - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+المدنية+-+الفصل+الأول+-+نموذج+2+-+الصفحة+" data-title="التربية المدنية - الفصل الأول - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+المدنية+-+الفصل+الأول+-+نموذج+3+-+الصفحة+" data-title="التربية المدنية - الفصل الأول - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card history">
+                    <i class="fas fa-landmark"></i>
+                    <h3>التاريخ والجغرافيا</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=التاريخ+والجغرافيا+-+الفصل+الأول+-+نموذج+1+-+الصفحة+" data-title="التاريخ والجغرافيا - الفصل الأول - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=التاريخ+والجغرافيا+-+الفصل+الأول+-+نموذج+2+-+الصفحة+" data-title="التاريخ والجغرافيا - الفصل الأول - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=التاريخ+والجغرافيا+-+الفصل+الأول+-+نموذج+3+-+الصفحة+" data-title="التاريخ والجغرافيا - الفصل الأول - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card french">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>اللغة الفرنسية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+الفرنسية+-+الفصل+الأول+-+نموذج+1+-+الصفحة+" data-title="اللغة الفرنسية - الفصل الأول - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+الفرنسية+-+الفصل+الأول+-+نموذج+2+-+الصفحة+" data-title="اللغة الفرنسية - الفصل الأول - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+الفرنسية+-+الفصل+الأول+-+نموذج+3+-+الصفحة+" data-title="اللغة الفرنسية - الفصل الأول - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- الفصل الثاني -->
+    <div class="content-section" data-content="term2">
+        <div class="container">
+            <div class="subjects-grid" style="padding: 20px 0;">
+                <div class="subject-card math">
+                    <i class="fas fa-calculator"></i>
+                    <h3>الرياضيات</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=الرياضيات+-+الفصل+الثاني+-+نموذج+1+-+الصفحة+" data-title="الرياضيات - الفصل الثاني - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=الرياضيات+-+الفصل+الثاني+-+نموذج+2+-+الصفحة+" data-title="الرياضيات - الفصل الثاني - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=الرياضيات+-+الفصل+الثاني+-+نموذج+3+-+الصفحة+" data-title="الرياضيات - الفصل الثاني - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card arabic">
+                    <i class="fas fa-language"></i>
+                    <h3>اللغة العربية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+العربية+-+الفصل+الثاني+-+نموذج+1+-+الصفحة+" data-title="اللغة العربية - الفصل الثاني - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+العربية+-+الفصل+الثاني+-+نموذج+2+-+الصفحة+" data-title="اللغة العربية - الفصل الثاني - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+العربية+-+الفصل+الثاني+-+نموذج+3+-+الصفحة+" data-title="اللغة العربية - الفصل الثاني - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card islamic">
+                    <i class="fas fa-mosque"></i>
+                    <h3>التربية الإسلامية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+الإسلامية+-+الفصل+الثاني+-+نموذج+1+-+الصفحة+" data-title="التربية الإسلامية - الفصل الثاني - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+الإسلامية+-+الفصل+الثاني+-+نموذج+2+-+الصفحة+" data-title="التربية الإسلامية - الفصل الثاني - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+الإسلامية+-+الفصل+الثاني+-+نموذج+3+-+الصفحة+" data-title="التربية الإسلامية - الفصل الثاني - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card science">
+                    <i class="fas fa-flask"></i>
+                    <h3>التربية العلمية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+العلمية+-+الفصل+الثاني+-+نموذج+1+-+الصفحة+" data-title="التربية العلمية - الفصل الثاني - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+العلمية+-+الفصل+الثاني+-+نموذج+2+-+الصفحة+" data-title="التربية العلمية - الفصل الثاني - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+العلمية+-+الفصل+الثاني+-+نموذج+3+-+الصفحة+" data-title="التربية العلمية - الفصل الثاني - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card civic">
+                    <i class="fas fa-users"></i>
+                    <h3>التربية المدنية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+المدنية+-+الفصل+الثاني+-+نموذج+1+-+الصفحة+" data-title="التربية المدنية - الفصل الثاني - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+المدنية+-+الفصل+الثاني+-+نموذج+2+-+الصفحة+" data-title="التربية المدنية - الفصل الثاني - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+المدنية+-+الفصل+الثاني+-+نموذج+3+-+الصفحة+" data-title="التربية المدنية - الفصل الثاني - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card history">
+                    <i class="fas fa-landmark"></i>
+                    <h3>التاريخ والجغرافيا</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=التاريخ+والجغرافيا+-+الفصل+الثاني+-+نموذج+1+-+الصفحة+" data-title="التاريخ والجغرافيا - الفصل الثاني - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=التاريخ+والجغرافيا+-+الفصل+الثاني+-+نموذج+2+-+الصفحة+" data-title="التاريخ والجغرافيا - الفصل الثاني - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=التاريخ+والجغرافيا+-+الفصل+الثاني+-+نموذج+3+-+الصفحة+" data-title="التاريخ والجغرافيا - الفصل الثاني - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card french">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>اللغة الفرنسية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+الفرنسية+-+الفصل+الثاني+-+نموذج+1+-+الصفحة+" data-title="اللغة الفرنسية - الفصل الثاني - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+الفرنسية+-+الفصل+الثاني+-+نموذج+2+-+الصفحة+" data-title="اللغة الفرنسية - الفصل الثاني - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+الفرنسية+-+الفصل+الثاني+-+نموذج+3+-+الصفحة+" data-title="اللغة الفرنسية - الفصل الثاني - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- الفصل الثالث -->
+    <div class="content-section" data-content="term3">
+        <div class="container">
+            <div class="subjects-grid" style="padding: 20px 0;">
+                <div class="subject-card math">
+                    <i class="fas fa-calculator"></i>
+                    <h3>الرياضيات</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=الرياضيات+-+الفصل+الثالث+-+نموذج+1+-+الصفحة+" data-title="الرياضيات - الفصل الثالث - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=الرياضيات+-+الفصل+الثالث+-+نموذج+2+-+الصفحة+" data-title="الرياضيات - الفصل الثالث - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=الرياضيات+-+الفصل+الثالث+-+نموذج+3+-+الصفحة+" data-title="الرياضيات - الفصل الثالث - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card arabic">
+                    <i class="fas fa-language"></i>
+                    <h3>اللغة العربية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+العربية+-+الفصل+الثالث+-+نموذج+1+-+الصفحة+" data-title="اللغة العربية - الفصل الثالث - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+العربية+-+الفصل+الثالث+-+نموذج+2+-+الصفحة+" data-title="اللغة العربية - الفصل الثالث - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+العربية+-+الفصل+الثالث+-+نموذج+3+-+الصفحة+" data-title="اللغة العربية - الفصل الثالث - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card islamic">
+                    <i class="fas fa-mosque"></i>
+                    <h3>التربية الإسلامية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+الإسلامية+-+الفصل+الثالث+-+نموذج+1+-+الصفحة+" data-title="التربية الإسلامية - الفصل الثالث - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+الإسلامية+-+الفصل+الثالث+-+نموذج+2+-+الصفحة+" data-title="التربية الإسلامية - الفصل الثالث - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+الإسلامية+-+الفصل+الثالث+-+نموذج+3+-+الصفحة+" data-title="التربية الإسلامية - الفصل الثالث - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card science">
+                    <i class="fas fa-flask"></i>
+                    <h3>التربية العلمية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+العلمية+-+الفصل+الثالث+-+نموذج+1+-+الصفحة+" data-title="التربية العلمية - الفصل الثالث - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+العلمية+-+الفصل+الثالث+-+نموذج+2+-+الصفحة+" data-title="التربية العلمية - الفصل الثالث - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+العلمية+-+الفصل+الثالث+-+نموذج+3+-+الصفحة+" data-title="التربية العلمية - الفصل الثالث - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card civic">
+                    <i class="fas fa-users"></i>
+                    <h3>التربية المدنية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+المدنية+-+الفصل+الثالث+-+نموذج+1+-+الصفحة+" data-title="التربية المدنية - الفصل الثالث - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+المدنية+-+الفصل+الثالث+-+نموذج+2+-+الصفحة+" data-title="التربية المدنية - الفصل الثالث - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="1" data-src="https://placehold.co/800x1131/ffffff/333333?text=التربية+المدنية+-+الفصل+الثالث+-+نموذج+3+-+الصفحة+" data-title="التربية المدنية - الفصل الثالث - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card history">
+                    <i class="fas fa-landmark"></i>
+                    <h3>التاريخ والجغرافيا</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=التاريخ+والجغرافيا+-+الفصل+الثالث+-+نموذج+1+-+الصفحة+" data-title="التاريخ والجغرافيا - الفصل الثالث - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=التاريخ+والجغرافيا+-+الفصل+الثالث+-+نموذج+2+-+الصفحة+" data-title="التاريخ والجغرافيا - الفصل الثالث - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=التاريخ+والجغرافيا+-+الفصل+الثالث+-+نموذج+3+-+الصفحة+" data-title="التاريخ والجغرافيا - الفصل الثالث - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-card french">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>اللغة الفرنسية</h3>
+                    <div class="topic-buttons">
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+الفرنسية+-+الفصل+الثالث+-+نموذج+1+-+الصفحة+" data-title="اللغة الفرنسية - الفصل الثالث - نموذج 1">
+                            <span>الموضوع 1</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+الفرنسية+-+الفصل+الثالث+-+نموذج+2+-+الصفحة+" data-title="اللغة الفرنسية - الفصل الثالث - نموذج 2">
+                            <span>الموضوع 2</span> <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-topic open-topic" data-pages="2" data-src="https://placehold.co/800x1131/ffffff/333333?text=اللغة+الفرنسية+-+الفصل+الثالث+-+نموذج+3+-+الصفحة+" data-title="اللغة الفرنسية - الفصل الثالث - نموذج 3">
+                            <span>الموضوع 3</span> <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- عارض المواضيع (Document Viewer Modal) -->
+    <div id="topicViewer" class="topic-viewer-modal">
+        <div class="viewer-header">
+            <h3 id="viewerTitle">عنوان الموضوع</h3>
+            <div class="viewer-controls">
+                <button id="zoomOutBtn" title="تصغير"><i class="fas fa-search-minus"></i></button>
+                <div class="zoom-level"><span id="zoomVal">100</span>%</div>
+                <button id="zoomInBtn" title="تكبير"><i class="fas fa-search-plus"></i></button>
+                <button id="printBtn" title="طباعة"><i class="fas fa-print"></i></button>
+                <button id="downloadBtn" title="تحميل"><i class="fas fa-download"></i></button>
+                <button id="closeViewerBtn" class="close-btn" title="خروج (Esc)"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="viewer-body">
+            <div class="document-container" id="documentContainer">
+                <img id="documentImage" src="" alt="صفحة الموضوع">
+            </div>
+        </div>
+        <div class="viewer-footer">
+            <button id="nextPageBtn"><i class="fas fa-chevron-right"></i> الصفحة التالية</button>
+            <span id="pageIndicator" class="page-indicator">الصفحة 1 من 2</span>
+            <button id="prevPageBtn">الصفحة السابقة <i class="fas fa-chevron-left"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 الموقع التعليمي - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

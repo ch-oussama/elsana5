@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفيديوهات التعليمية - السنة الخامسة ابتدائي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                الخامسة ابتدائي
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="subjects.html"><i class="fas fa-book"></i> المواد</a></li>
+                <li><a href="videos.html" class="active"><i class="fas fa-video"></i> الفيديوهات</a></li>
+                <li><a href="tests.html"><i class="fas fa-tasks"></i> التمارين</a></li>
+                <li><a href="topics.html"><i class="fas fa-file-alt"></i> مواضيع</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header" style="background: linear-gradient(135deg, #dc2626, #b91c1c);">
+        <h1><i class="fas fa-video"></i> الفيديوهات التعليمية</h1>
+        <p>فيديوهات يوتيوب حقيقية من أفضل القنوات التعليمية الجزائرية</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="math-videos">الرياضيات</button>
+        <button class="tab-btn" data-tab="science-videos">العلوم</button>
+        <button class="tab-btn" data-tab="arabic-videos">العربية</button>
+        <button class="tab-btn" data-tab="french-videos">الفرنسية</button>
+        <button class="tab-btn" data-tab="history-videos">التاريخ والجغرافيا</button>
+        <button class="tab-btn" data-tab="channels">قنوات يوتيوب</button>
+    </div>
+
+    <!-- فيديوهات الرياضيات -->
+    <div class="content-section active" data-content="math-videos">
+        <div class="video-grid">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/Go4G1nNcww8" title="مراجعة رياضيات الصف الخامس الابتدائي" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>مراجعة رياضيات الصف الخامس الابتدائي</h3>
+                    <p>مراجعة امتحان خامسة ابتدائي الترم الأول رياضيات 2025/2026</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/jORgv3kR-Hw" title="رياضيات الخامس الابتدائي" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>رياضيات الخامس - الكسور العشرية</h3>
+                    <p>حل أسئلة صفحة 81 و 82 - الفصل الخامس الكسور العشرية</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/M_X1NH0Anwc" title="maths 5ème année" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>Maths 5ème - تمارين امتحان</h3>
+                    <p>تمارين معمقة في مادة الرياضيات للسنة الخامسة ابتدائي</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- فيديوهات العلوم -->
+    <div class="content-section" data-content="science-videos">
+        <div class="video-grid">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/lcAyabG1UQY" title="مراجعة نهائية علوم الصف الخامس الابتدائي" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>مراجعة نهائية علوم الصف الخامس الابتدائي</h3>
+                    <p>مراجعة شاملة لامتحان العلوم - الفصل الثاني 2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- فيديوهات العربية -->
+    <div class="content-section" data-content="arabic-videos">
+        <div class="video-grid">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/jmzZnVkP_SM" title="درس أخلاقيات استخدام الإنترنت - لغة عربية الصف الخامس" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>درس أخلاقيات استخدام الإنترنت</h3>
+                    <p>لغة عربية الصف الخامس الابتدائي - الترم الثاني - كتاب الأضواء</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/8VCOHfo-adM" title="درس الألف اللينة للصف الخامس" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>درس الألف اللينة للصف الخامس</h3>
+                    <p>شرح درس الألف اللينة مع التدريبات - لغة عربية</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- فيديوهات الفرنسية -->
+    <div class="content-section" data-content="french-videos">
+        <div class="video-grid">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/M_X1NH0Anwc" title="5ème année française" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>5ème année Primaire - Français</h3>
+                    <p>تمارين في اللغة الفرنسية للسنة الخامسة ابتدائي</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- فيديوهات التاريخ والجغرافيا -->
+    <div class="content-section" data-content="history-videos">
+        <div class="video-grid">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/P47-vqc7b60" title="اختبار الفصل الثاني تاريخ وجغرافيا السنة الخامسة ابتدائي" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>اختبار الفصل الثاني - التاريخ والجغرافيا</h3>
+                    <p>اختبار في مادة التاريخ والجغرافيا للسنة الخامسة ابتدائي</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/lfN1G85sxkk" title="اختبار الفصل الاول تاريخ وجغرافيا السنة الخامسة ابتدائي" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>اختبار الفصل الأول - التاريخ والجغرافيا</h3>
+                    <p>اختبار في مادة التاريخ والجغرافيا للسنة الخامسة ابتدائي - الفصل الأول</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/GiCclquGuFA" title="اختبار الفصل الأول في الجغرافيا للسنة الخامسة ابتدائي" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>اختبار الجغرافيا - الفصل الأول</h3>
+                    <p>الموقع الفلكي والجغرافي للجزائر - التموقع - تضاريس الجزائر</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/Ll-Qq1k9JwI" title="اختبار التاريخ والجغرافيا للفصل الثاني" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>اختبار التاريخ والجغرافيا - الفصل الثاني</h3>
+                    <p>اختبار في مادة التاريخ والجغرافيا للسنة الخامسة ابتدائي</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/DX-GgtMTDjY" title="نموذج اختبار في التاريخ والجغرافيا الفصل الأول" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>نموذج اختبار (2) - التاريخ والجغرافيا</h3>
+                    <p>اختبار في مادة التاريخ والجغرافيا للسنة الخامسة ابتدائي - الفصل الأول</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- قنوات يوتيوب -->
+    <div class="content-section" data-content="channels">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <h2 style="margin-bottom: 30px; color: #dc2626; text-align: center;"><i class="fab fa-youtube"></i> أفضل قنوات يوتيوب للسنة الخامسة ابتدائي</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/@sdam_zeroual', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #dc2626, #b91c1c);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>الأستاذ صدام زرواق</h3>
+                    <p>967 فيديو - شرح كتاب الدروس + تمارين كتاب الأنشطة</p>
+                    <span style="color: #dc2626; font-weight: bold;">زيارة القناة ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/@awwabta3limia', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>أواب التعليمية</h3>
+                    <p>889 فيديو - أكثر من 55 مليون مشاهدة</p>
+                    <span style="color: #8b5cf6; font-weight: bold;">زيارة القناة ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/@elmostalahannajeh', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>الأستاذ الناجح</h3>
+                    <p>361 فيديو - أكثر من 18.8 مليون مشاهدة</p>
+                    <span style="color: #10b981; font-weight: bold;">زيارة القناة ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/@ta3limcom', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>ta3limcom تعليم كوم</h3>
+                    <p>196 فيديو - أكثر من 32 مليون مشاهدة</p>
+                    <span style="color: #f59e0b; font-weight: bold;">زيارة القناة ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/@mohamedferkouki', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #ec4899, #db2777);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>محمد الفرقوقي</h3>
+                    <p>781 فيديو - أكثر من 20.8 مليون مشاهدة</p>
+                    <span style="color: #ec4899; font-weight: bold;">زيارة القناة ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/@eliascherad', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>المعلّم إلياس شراد</h3>
+                    <p>681 فيديو - أكثر من 23.9 مليون مشاهدة</p>
+                    <span style="color: #06b6d4; font-weight: bold;">زيارة القناة ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/@nedjarnaziha', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>NEDJAR NAZIHA - بدون اطالة</h3>
+                    <p>126 فيديو - أكثر من 43.5 مليون مشاهدة</p>
+                    <span style="color: #ef4444; font-weight: bold;">زيارة القناة ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/@eltalmeezelmoutamayyez', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>التلميذ المتميز</h3>
+                    <p>409 فيديو - أكثر من 12.3 مليون مشاهدة</p>
+                    <span style="color: #2563eb; font-weight: bold;">زيارة القناة ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/@5annee-primaire', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #7c3aed, #6d28d9);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>القناة الرسمية للسنة 5 ابتدائي</h3>
+                    <p>117 فيديو - أكثر من 1.2 مليون مشاهدة</p>
+                    <span style="color: #7c3aed; font-weight: bold;">زيارة القناة ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/@mferkouki', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #059669, #047857);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>محمد لعناصري</h3>
+                    <p>673 فيديو - أكثر من 18.3 مليون مشاهدة</p>
+                    <span style="color: #059669; font-weight: bold;">زيارة القناة ←</span>
+                </div>
+            </div>
+
+            <h2 style="margin: 40px 0 20px; color: #2563eb; text-align: center;"><i class="fas fa-globe"></i> مواقع تعليمية مفيدة</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://educationdz.com/primaire/5ap', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>موقع التعليم الجزائري</h3>
+                    <p>ملخصات ودروس وفروض لجميع المواد</p>
+                    <span style="color: #2563eb; font-weight: bold;">زيارة الموقع ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.dzexams.com/ar/5ap', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>DzExams</h3>
+                    <p>بنك ضخم من الفروض والاختبارات</p>
+                    <span style="color: #10b981; font-weight: bold;">زيارة الموقع ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.ency-education.net/5ap', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Ency Education</h3>
+                    <p>تمارين محلولة ومواضيع مقترحة</p>
+                    <span style="color: #8b5cf6; font-weight: bold;">زيارة الموقع ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://eddirasa.com/ens-pri/fifth-primary/', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>موقع الدراسة</h3>
+                    <p>دروس ومذكرات وكتب مدرسية</p>
+                    <span style="color: #f59e0b; font-weight: bold;">زيارة الموقع ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.alloschool.com/category/fifth-primary', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #ec4899, #db2777);">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3>AlloSchool</h3>
+                    <p>دروس وتمارين وفروض مجانية</p>
+                    <span style="color: #ec4899; font-weight: bold;">زيارة الموقع ←</span>
+                </div>
+
+                <div class="feature-card" style="cursor: pointer;" onclick="window.open('https://www.9rayti.com/doros/primaire', '_blank')">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>9rayti.com</h3>
+                    <p>دروس وتمارين التعليم الإبتدائي</p>
+                    <span style="color: #06b6d4; font-weight: bold;">زيارة الموقع ←</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> الموقع التعليمي</h3>
+                    <p>فيديوهات تعليمية حقيقية من أفضل القنوات الجزائرية</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="subjects.html">المواد</a></li>
+                        <li><a href="videos.html">الفيديوهات</a></li>
+                        <li><a href="tests.html">التمارين</a></li>
+                        <li><a href="topics.html">مواضيع</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 الموقع التعليمي - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

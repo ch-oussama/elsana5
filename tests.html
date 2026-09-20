@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التمارين التدريبية - السنة الخامسة ابتدائي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                الخامسة ابتدائي
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="subjects.html"><i class="fas fa-book"></i> المواد</a></li>
+                <li><a href="videos.html"><i class="fas fa-video"></i> الفيديوهات</a></li>
+                <li><a href="tests.html" class="active"><i class="fas fa-tasks"></i> التمارين</a></li>
+                <li><a href="topics.html"><i class="fas fa-file-alt"></i> مواضيع</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header" style="background: linear-gradient(135deg, #059669, #047857);">
+        <h1><i class="fas fa-file-alt"></i> التمارين التدريبية</h1>
+        <p>اختبر معلوماتك في جميع المواد</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="math-test">الرياضيات</button>
+        <button class="tab-btn" data-tab="science-test">العلوم</button>
+        <button class="tab-btn" data-tab="arabic-test">العربية</button>
+        <button class="tab-btn" data-tab="islamic-test">التربية الإسلامية</button>
+    </div>
+
+    <!-- تمارين الرياضيات -->
+    <div class="content-section active" data-content="math-test">
+        <div class="test-section">
+            <div class="test-card">
+                <h3><i class="fas fa-calculator"></i> تمارين الرياضيات - الفصل الأول</h3>
+                
+                <div class="question" data-answer="3">
+                    <h4>1. ما ناتج 456 + 378؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">734</button>
+                        <button class="option" data-value="2">824</button>
+                        <button class="option" data-value="3">834</button>
+                        <button class="option" data-value="4">844</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="1">
+                    <h4>2. ما ناتج 1000 - 457؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">543</button>
+                        <button class="option" data-value="2">553</button>
+                        <button class="option" data-value="3">563</button>
+                        <button class="option" data-value="4">573</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="3">
+                    <h4>3. ما ناتج 25 × 12؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">280</button>
+                        <button class="option" data-value="2">290</button>
+                        <button class="option" data-value="3">300</button>
+                        <button class="option" data-value="4">310</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="1">
+                    <h4>4. ما ناتج 144 ÷ 12؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">12</button>
+                        <button class="option" data-value="2">11</button>
+                        <button class="option" data-value="3">13</button>
+                        <button class="option" data-value="4">14</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="3">
+                    <h4>5. ما الكسر الناتج عن 0.75؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1"><sup>1</sup>/<sub>2</sub></button>
+                        <button class="option" data-value="2"><sup>2</sup>/<sub>3</sub></button>
+                        <button class="option" data-value="3"><sup>3</sup>/<sub>4</sub></button>
+                        <button class="option" data-value="4"><sup>4</sup>/<sub>5</sub></button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="2">
+                    <h4>6. محيط مربع ضلعه 8 سم يساوي:</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">16 سم</button>
+                        <button class="option" data-value="2">32 سم</button>
+                        <button class="option" data-value="3">24 سم</button>
+                        <button class="option" data-value="4">64 سم</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="1">
+                    <h4>7. مساحة مستطيل طوله 10 سم وعرضه 5 سم تساوي:</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">50 سم²</button>
+                        <button class="option" data-value="2">30 سم²</button>
+                        <button class="option" data-value="3">25 سم²</button>
+                        <button class="option" data-value="4">15 سم²</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="4">
+                    <h4>8. ما العدد الأكبر من 4567 و 4576؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">4567</button>
+                        <button class="option" data-value="2">متساويان</button>
+                        <button class="option" data-value="3">-</button>
+                        <button class="option" data-value="4">4576</button>
+                    </div>
+                </div>
+
+                <button class="check-btn">تحقق من الإجابات</button>
+                <div class="score-display">
+                    <h3>نتيحتك: 0 / 8</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- تمارين العلوم -->
+    <div class="content-section" data-content="science-test">
+        <div class="test-section">
+            <div class="test-card">
+                <h3><i class="fas fa-flask"></i> تمارين العلوم الطبيعية - الفصل الأول</h3>
+                
+                <div class="question" data-answer="2">
+                    <h4>1. ما هو العضو الذي يتحكم في جميع حركات الجسم؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">القلب</button>
+                        <button class="option" data-value="2">الدماغ</button>
+                        <button class="option" data-value="3">المعدة</button>
+                        <button class="option" data-value="4">الرئتان</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="1">
+                    <h4>2. كم عدد عظام الهيكل العظمي عند الإنسان؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">206</button>
+                        <button class="option" data-value="2">250</button>
+                        <button class="option" data-value="3">300</button>
+                        <button class="option" data-value="4">150</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="3">
+                    <h4>3. أي من التالي يحتوي على البروتينات؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">الخبز</button>
+                        <button class="option" data-value="2">الزيت</button>
+                        <button class="option" data-value="3">البيض</button>
+                        <button class="option" data-value="4">الفواكه</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="4">
+                    <h4>4. ما هي العملية التي تصنع بها النباتات غذاءها؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">التنفس</button>
+                        <button class="option" data-value="2">النمو</button>
+                        <button class="option" data-value="3">التكاثر</button>
+                        <button class="option" data-value="4">البناء الضوئي</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="2">
+                    <h4>5. أي من التالي حشرة؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">الأسد</button>
+                        <button class="option" data-value="2">النحلة</button>
+                        <button class="option" data-value="3">السمكة</button>
+                        <button class="option" data-value="4">الحوت</button>
+                    </div>
+                </div>
+
+                <button class="check-btn">تحقق من الإجابات</button>
+                <div class="score-display">
+                    <h3>نتيحتك: 0 / 5</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- تمارين العربية -->
+    <div class="content-section" data-content="arabic-test">
+        <div class="test-section">
+            <div class="test-card">
+                <h3><i class="fas fa-language"></i> تمارين اللغة العربية - الفصل الأول</h3>
+                
+                <div class="question" data-answer="2">
+                    <h4>1. ما الفاعل في جملة: كتب محمد الدرس؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">كتب</button>
+                        <button class="option" data-value="2">محمد</button>
+                        <button class="option" data-value="3">الدرس</button>
+                        <button class="option" data-value="4">-</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="3">
+                    <h4>2. ما المفعول به في جملة: قرأت سارة الكتاب؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">قرأت</button>
+                        <button class="option" data-value="2">سارة</button>
+                        <button class="option" data-value="3">الكتاب</button>
+                        <button class="option" data-value="4">-</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="1">
+                    <h4>3. ما معنى مثل "من جد وجد"؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">الجدّ يُثمر</button>
+                        <button class="option" data-value="2">البحث عن الجد</button>
+                        <button class="option" data-value="3">الجد هو الأهم</button>
+                        <button class="option" data-value="4">-</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="4">
+                    <h4>4. مثال عن التضاد:</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">جميل / حسن</button>
+                        <button class="option" data-value="2">سيئ / قبيح</button>
+                        <button class="option" data-value="3">كبير / ضخم</button>
+                        <button class="option" data-value="4">كبير / صغير</button>
+                    </div>
+                </div>
+
+                <button class="check-btn">تحقق من الإجابات</button>
+                <div class="score-display">
+                    <h3>نتيحتك: 0 / 4</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- تمارين التربية الإسلامية -->
+    <div class="content-section" data-content="islamic-test">
+        <div class="test-section">
+            <div class="test-card">
+                <h3><i class="fas fa-mosque"></i> تمارين التربية الإسلامية - الفصل الأول</h3>
+                
+                <div class="question" data-answer="1">
+                    <h4>1. كم عدد سور القرآن الكريم؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">114 سورة</button>
+                        <button class="option" data-value="2">100 سورة</button>
+                        <button class="option" data-value="3">120 سورة</button>
+                        <button class="option" data-value="4">105 سورة</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="3">
+                    <h4>2. ما هو الركن الأول من أركان الإيمان؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">الإيمان بالملائكة</button>
+                        <button class="option" data-value="2">الإيمان بالكتب</button>
+                        <button class="option" data-value="3">الإيمان بالله</button>
+                        <button class="option" data-value="4">الإيمان بالرسل</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="2">
+                    <h4>3. متى وُلد النبي محمد صلى الله عليه وسلم؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">10 رمضان</button>
+                        <button class="option" data-value="2">12 ربيع الأول</button>
+                        <button class="option" data-value="3">1 محرم</button>
+                        <button class="option" data-value="4">27 رجب</button>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="4">
+                    <h4>4. ما هي الركعة؟</h4>
+                    <div class="options">
+                        <button class="option" data-value="1">جزء من الصلاة</button>
+                        <button class="option" data-value="2">نوع من الطهارة</button>
+                        <button class="option" data-value="3">من أركان الإسلام</button>
+                        <button class="option" data-value="4">وحدة الصلاة</button>
+                    </div>
+                </div>
+
+                <button class="check-btn">تحقق من الإجابات</button>
+                <div class="score-display">
+                    <h3>نتيحتك: 0 / 4</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>أحسنت!</h2>
+            <p>استمر في التعلم والمراجعة</p>
+            <a href="subjects.html" class="btn-primary">ارجع للمواد <i class="fas fa-arrow-left"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> الموقع التعليمي</h3>
+                    <p>مواقع تعليمية شاملة لتلاميذ السنة الخامسة ابتدائي في الجزائر</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="subjects.html">المواد</a></li>
+                        <li><a href="videos.html">الفيديوهات</a></li>
+                        <li><a href="tests.html">التمارين</a></li>
+                        <li><a href="topics.html">مواضيع</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 الموقع التعليمي - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

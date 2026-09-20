@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع التعليمي - السنة الخامسة ابتدائي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                الخامسة ابتدائي
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="subjects.html"><i class="fas fa-book"></i> المواد</a></li>
+                <li><a href="videos.html"><i class="fas fa-video"></i> الفيديوهات</a></li>
+                <li><a href="tests.html"><i class="fas fa-tasks"></i> التمارين</a></li>
+                <li><a href="topics.html"><i class="fas fa-file-alt"></i> مواضيع</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1><i class="fas fa-graduation-cap"></i> مرحباً بكم في الموقع التعليمي</h1>
+            <p class="subtitle">السنة الخامسة ابتدائي - جميع المواد الدراسية</p>
+            <p class="description">ملخصات شاملة، فيديوهات تعليمية، اختبارات تدريبية لكل الفصول</p>
+            <a href="subjects.html" class="btn-primary">ابدأ التعلم الآن <i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">لماذا هذا الموقع؟</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>ملخصات شاملة</h3>
+                    <p>ملخصات مفصلة لكل درس في جميع المواد الدراسية</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3>فيديوهات تعليمية</h3>
+                    <p>فيديوهات يوتيوب موضحة لكل درس وفصل</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>اختبارات تدريبية</h3>
+                    <p>اختبارات لكل فصل لقياس التقدم والفهم</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>جميع الفصول</h3>
+                    <p>محتوى كامل للأول والثاني والثالث فصل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subjects-preview">
+        <div class="container">
+            <h2 class="section-title">المواد الدراسية</h2>
+            <div class="subjects-grid">
+                <a href="math.html" class="subject-card math">
+                    <i class="fas fa-calculator"></i>
+                    <h3>الرياضيات</h3>
+                    <p>الجمع، الطرح، الضرب، القسمة، الكسور، الأعداد العشرية...</p>
+                    <span class="subject-count">3 فصول</span>
+                </a>
+                <a href="science.html" class="subject-card science">
+                    <i class="fas fa-flask"></i>
+                    <h3>العلوم الطبيعية</h3>
+                    <p>الجسم البشري، الطبيعة، الحيوانات، النباتات...</p>
+                    <span class="subject-count">3 فصول</span>
+                </a>
+                <a href="arabic.html" class="subject-card arabic">
+                    <i class="fas fa-language"></i>
+                    <h3>اللغة العربية</h3>
+                    <p>القراءة، الكتابة، النحو، الإملاء، النصوص الأدبية...</p>
+                    <span class="subject-count">3 فصول</span>
+                </a>
+                <a href="french.html" class="subject-card french">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>اللغة الفرنسية</h3>
+                    <p>La lecture, L'écriture, La grammaire, Le vocabulaire...</p>
+                    <span class="subject-count">3 فصول</span>
+                </a>
+                <a href="history.html" class="subject-card history">
+                    <i class="fas fa-landmark"></i>
+                    <h3>التاريخ والجغرافيا</h3>
+                    <p>تاريخ الجزائر، الجغرافيا، المواطنة...</p>
+                    <span class="subject-count">3 فصول</span>
+                </a>
+                <a href="islamic.html" class="subject-card islamic">
+                    <i class="fas fa-mosque"></i>
+                    <h3>التربية الإسلامية</h3>
+                    <p>القرآن الكريم، السيرة النبوية، العقيدة، الفقه...</p>
+                    <span class="subject-count">3 فصول</span>
+                </a>
+                <a href="civic.html" class="subject-card civic">
+                    <i class="fas fa-users"></i>
+                    <h3>التربية المدنية</h3>
+                    <p>المجتمع، الحقوق والواجبات، الديمقراطية...</p>
+                    <span class="subject-count">3 فصول</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>جاهز للبدء؟</h2>
+            <p>اختر المادة التي تريد البدء بتعلمها الآن!</p>
+            <a href="subjects.html" class="btn-primary">تصفح المواد <i class="fas fa-arrow-left"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> الموقع التعليمي</h3>
+                    <p>مواقع تعليمية شاملة لتلاميذ السنة الخامسة ابتدائي في الجزائر</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="subjects.html">المواد</a></li>
+                        <li><a href="videos.html">الفيديوهات</a></li>
+                        <li><a href="tests.html">التمارين</a></li>
+                        <li><a href="topics.html">مواضيع</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تابعنا</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 الموقع التعليمي - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
