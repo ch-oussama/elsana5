@@ -125,12 +125,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const zoomVal = document.getElementById('zoomVal');
     const docContainer = document.getElementById('documentContainer');
     const docImage = document.getElementById('documentImage');
+    const docIframe = document.getElementById('documentIframe');
     const nextBtn = document.getElementById('nextPageBtn'); // In RTL, next page means moving to page 2 (left arrow usually, but functionally it's next)
     const prevBtn = document.getElementById('prevPageBtn');
     const pageInd = document.getElementById('pageIndicator');
     const printBtn = document.getElementById('printBtn');
     const downloadBtn = document.getElementById('downloadBtn');
     const viewerTitle = document.getElementById('viewerTitle');
+    const viewerFooter = document.querySelector('.viewer-footer');
+    const zoomControls = zoomVal ? zoomVal.parentElement : null;
 
     function updateImage() {
         docImage.src = srcBase + currentPage;
@@ -146,18 +149,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
     openBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            totalPages = parseInt(btn.getAttribute('data-pages')) || 1;
             srcBase = btn.getAttribute('data-src');
             currentTitle = btn.getAttribute('data-title');
-            currentPage = 1;
-            currentZoom = 100;
+            if(viewerTitle) viewerTitle.textContent = currentTitle;
             
-            viewerTitle.textContent = currentTitle;
-            applyZoom();
-            updateImage();
+            if (srcBase && srcBase.toLowerCase().endsWith('.pdf')) {
+                if(docImage) docImage.style.display = 'none';
+                if(docIframe) {
+                    docIframe.style.display = 'block';
+                    docIframe.src = srcBase;
+                }
+                
+                if(viewerFooter) viewerFooter.style.display = 'none';
+                if(zoomInBtn) zoomInBtn.style.display = 'none';
+                if(zoomOutBtn) zoomOutBtn.style.display = 'none';
+                if(zoomControls) zoomControls.style.display = 'none';
+                if(printBtn) printBtn.style.display = 'none';
+                if(downloadBtn) downloadBtn.style.display = 'none';
+                
+                if(docContainer) docContainer.style.transform = 'scale(1)';
+            } else {
+                if(docImage) docImage.style.display = 'block';
+                if(docIframe) {
+                    docIframe.style.display = 'none';
+                    docIframe.src = '';
+                }
+                
+                if(viewerFooter) viewerFooter.style.display = 'flex';
+                if(zoomInBtn) zoomInBtn.style.display = 'inline-block';
+                if(zoomOutBtn) zoomOutBtn.style.display = 'inline-block';
+                if(zoomControls) zoomControls.style.display = 'inline-block';
+                if(printBtn) printBtn.style.display = 'inline-block';
+                if(downloadBtn) downloadBtn.style.display = 'inline-block';
+                
+                totalPages = parseInt(btn.getAttribute('data-pages')) || 1;
+                currentPage = 1;
+                currentZoom = 100;
+                applyZoom();
+                updateImage();
+            }
             
             topicViewer.classList.add('open');
-            document.body.style.overflow = 'hidden'; // prevent background scrolling
+            document.body.style.overflow = 'hidden';
         });
     });
 
